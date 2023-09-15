@@ -1,24 +1,25 @@
-	Ubuntu Linux 20.4 :
-	
-	Kubectl and Minikube Install steps:
-	
-1	sudo apt-get update -y
-2	sudo apt install docker.io -y
-3	sudo apt install curl -y
-4	curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-5	chmod +x kubectl
-6	sudo mv kubectl /usr/local/bin
-7	apt update -y
-8	curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
-9	sudo dpkg -i minikube_latest_amd64.deb
-10	dpkg -l | grep minikube
-11	minikube start
-12	docker version --format
-13	docker --version
-14	sudo su
-15	minikube start
-16	minikube start --force
-17	minikube config
-18	minikube status
-19	kubectl cluster-info
-20	kubectl get nodes
+
+Ubuntu Linux 20.4 :
+
+Kubectl and Minikube Install steps:
+
+Commands
+
+sudo apt-get update -y
+sudo apt install docker.io -y
+sudo apt install curl -y
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin
+apt update -y
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+sudo dpkg -i minikube_latest_amd64.deb
+dpkg -l | grep minikube
+docker --version
+sudo su
+minikube start
+minikube start --force
+minikube config
+minikube status
+kubectl cluster-info
+kubectl get nodes
